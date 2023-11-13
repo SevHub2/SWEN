@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Endnote Berechnen</title>
+</head>
+<body>
+    <h1>Endnote Berechnen</h1>
+    <form method="post" action="/calculate">
+        <label for="difficulty">Schwierigkeitsnote:</label>
+        <input type="number" step="0.01" name="difficulty" id="difficulty" required><br><br>
+        
+        <label for="deductions">Abzüge bei Ausführung:</label>
+        <input type="number" step="0.01" name="deductions" id="deductions" required><br><br>
+        
+        <input type="submit" value="Berechnen">
+    </form>
+    {% if final_score %}
+    <h2>Endnote: {{ final_score }}</h2>
+    {% endif %}
+</body>
+</html>
