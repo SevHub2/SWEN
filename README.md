@@ -1,25 +1,49 @@
-!! Change this document for your own project by removing the placeholder text, adding your own text, adding helpful sections etc. etc. !!
-
-# <Project Title>
-
-In a few sentences describe what your project is trying to solve.
-
-You can use [GitHub markdown
-notation](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-or [GitLab markdown notation](https://docs.gitlab.com/ee/user/markdown.html) in
-case you are using one of these platforms. This will give a nicely formatted
-documentation when looking at your project online.
+# Score Calculator App
+This Flask-based web application enables users to input a difficulty score and 
+execution deductions to automatically calculate a final score. It's designed to
+simplify performance evaluations in a gymnastics competitions.
 
 ## Get started
+To get started with the Flask scoring application, the user should follow these steps
 
-Explain what the user has to type to get started with your solution. Which one
-is the main Python file? In the simplest case, this could look something like
-this:
+### Set up the environment:
+Ensure Python and pip are installed on the system. Create a virtual environment in the project directory:
 
 ``
-    python main.py
+    python -m venv venv
 ``
 
+Activate the virtual environment:
+On Windows:
+
+
+``
+    venv\Scripts\activate
+``
+
+On Unix or MacOS:
+
+``
+    source venv/bin/activate
+``
+
+### Install Flask:
+With the virtual environment activated, install Flask using pip:
+
+``
+    pip install flask
+``
+### Start the application:
+The main Python file is main.py. Run it with the following command:
+``
+    python app.py
+``
+### Access the application:
+Open a web browser and navigate to http://127.0.0.1:5000/ to use the application.
+
+The file app.py contains all the routes and logic for the web application and serves as the entry point to the Flask application.
+
+### Other cases
 In other cases the user might first have to install some project dependencies
 first has to run something like this (a sample requirements.txt file is also
 included in the project template):
@@ -29,9 +53,8 @@ included in the project template):
 ``
 
 ## Understanding the sources
-
-Explain any high level concepts that you are using in your software. What were
-your ideas for creating the whole software? What might not be apparent from the
-sources alone? You can also add diagrams, photos of whiteboards or flipcharts
-or even crudly drawing napkin sketches of the core concepts of your software
-when they are readable and helpful for understanding.
+The software leverages Flask's simplicity for web service creation, focusing on 
+ease of use and clear data flow. The idea was to provide a user-friendly interface 
+for score calculation without extensive setup. The core concept involves input
+validation and automated calculation to ensure reliability, which might not be 
+apparent from the code alone.
