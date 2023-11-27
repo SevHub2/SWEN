@@ -55,6 +55,15 @@ input[type="number"] {
     font-size: 16px;
 }
 
+/* Flexbox-Styling für die Buttons */
+input[type="submit"],
+input[type="reset"] {
+    flex: 1;
+    /* Teile den verfügbaren Platz gleichmäßig auf die Buttons auf */
+    margin-right: 10px;
+    /* Füge etwas Abstand zwischen den Buttons hinzu */
+}
+
 input[type="submit"] {
     background-color: navy;
     color: white;
@@ -66,6 +75,21 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
+    background-color: white;
+    color: navy;
+}
+
+input[type="reset"] {
+    background-color: navy;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 15px;
+    cursor: crosshair;
+}
+
+input[type="reset"]:hover {
     background-color: white;
     color: navy;
 }
