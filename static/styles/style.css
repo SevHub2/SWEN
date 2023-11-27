@@ -1,0 +1,71 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    /* Damit der Hintergrund den gesamten Bildschirm ausfüllt */
+    margin: 0;
+    /* Entfernt den Standardmäßigen Außenabstand des body-Elements */
+}
+
+h1,
+h2 {
+    color: navy;
+    margin-top: 0px;
+    margin-left: 35px;
+    /* Fügt oberen Abstand zum <h1>-Element hinzu */
+
+}
+
+form {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #121212;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    margin-right: 7px;
+    margin-bottom: 35px;
+    padding: 16px;
+    border: 1px solid #121212;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Weiß mit 50% Transparenz */
+    color: #121212;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: navy;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 15px;
+    cursor: crosshair;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: navy;
+}
