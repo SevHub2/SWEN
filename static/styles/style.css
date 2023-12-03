@@ -74,22 +74,94 @@ input[type="submit"] {
     cursor: crosshair;
 }
 
-input[type="submit"]:hover {
-    background-color: white;
-    color: navy;
+input[type="submit"],
+
+.reset-button {
+
+    background-color:
+        navy;
+
+    color:
+        white;
+
+    padding:
+        10px 15px;
+
+    border:
+        none;
+
+    border-radius:
+        50px;
+
+    margin-top:
+        15px;
+
+    cursor:
+        crosshair;
+
+    text-decoration:
+        none;
+
+    /* Entfernt die Unterstreichung des Links */
+
+    display:
+        inline-block;
+
+    /* Ermöglicht das Anwenden von Padding und Border-Radius */
+
 }
 
-input[type="reset"] {
-    background-color: navy;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 50px;
-    margin-top: 15px;
-    cursor: crosshair;
+
+
+
+
+
+input[type="submit"]:hover,
+
+.reset-button:hover {
+
+    background-color:
+        white;
+
+    color:
+        navy;
+
 }
 
-input[type="reset"]:hover {
-    background-color: white;
-    color: navy;
+
+
+.results {
+
+    font-weight:
+        bold;
+
+    text-align:
+        left;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    /* Links ausrichten */
+
+    width:
+        100%;
+
+    /* Stellen Sie sicher, dass der Container die volle Breite einnimmt */
+
+    padding:
+        0px;
+
+    /* Optionaler Abstand */
+
+    justify-content:
+        center;
+
+
+
 }
