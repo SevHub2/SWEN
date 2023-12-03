@@ -16,6 +16,11 @@ body {
     /* Entfernt den Standardmäßigen Außenabstand des body-Elements */
 }
 
+/* Füge etwas Platz unter dem Titel hinzu */
+div[style="text-align: right;"] {
+    margin-bottom: 20px;
+}
+
 h1,
 h2 {
     color: navy;
