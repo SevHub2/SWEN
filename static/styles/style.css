@@ -1,182 +1,77 @@
 body {
     font-family: Helvetica, sans-serif;
-    background: rgb(34, 193, 195);
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 80vh;
-    /* Damit der Hintergrund den gesamten Bildschirm ausfüllt */
-    margin: 0;
-    /* Entfernt den Standardmäßigen Außenabstand des body-Elements */
-}
-
-/* Füge etwas Platz unter dem Titel hinzu */
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-h1 {
-    color: navy;
-    margin-top: 20px;
-    /* Füge etwas oberen Abstand zum <h1>-Element hinzu */
 }
 
 h1,
 h2 {
     color: navy;
-    margin-top: 0px;
-    margin-left: 35px;
-    /* Fügt oberen Abstand zum <h1>-Element hinzu */
-
+    margin: 0 0 20px 35px;
 }
 
-<body class="container"></body>form {
+form {
     background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
-    border-radius: 5px;
     text-align: left;
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
     color: #121212;
     font-size: 16px;
     font-weight: bold;
+    margin-bottom: 8px;
 }
 
-
 input[type="number"] {
-    margin-right: 7px;
-    margin-bottom: 35px;
     padding: 16px;
+    margin-right: 7px;
+    margin-bottom: 20px;
+    /* Angepasst von 35px auf 20px für einheitlichen Abstand */
     border: 1px solid #121212;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.5);
-    /* Weiß mit 50% Transparenz */
     color: #121212;
     font-size: 16px;
 }
 
-/* Flexbox-Styling für die Buttons */
+/* Stile für beide Buttons (Berechnen und Reset) */
 input[type="submit"],
-input[type="reset"] {
-    flex: 1;
-    /* Teile den verfügbaren Platz gleichmäßig auf die Buttons auf */
-    margin-right: 10px;
-    /* Füge etwas Abstand zwischen den Buttons hinzu */
-}
-
-input[type="submit"] {
+button[type="button"] {
     background-color: navy;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 50px;
     margin-top: 15px;
-    cursor: crosshair;
+    margin-right: 10px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
 }
 
-input[type="submit"],
-
-.reset-button {
-
-    background-color:
-        navy;
-
-    color:
-        white;
-
-    padding:
-        10px 15px;
-
-    border:
-        none;
-
-    border-radius:
-        50px;
-
-    margin-top:
-        15px;
-
-    cursor:
-        crosshair;
-
-    text-decoration:
-        none;
-
-    /* Entfernt die Unterstreichung des Links */
-
-    display:
-        inline-block;
-
-    /* Ermöglicht das Anwenden von Padding und Border-Radius */
-
-}
-
-
-
-
-
-
+/* Hover-Effekt für beide Buttons */
 input[type="submit"]:hover,
-
-.reset-button:hover {
-
-    background-color:
-        white;
-
-    color:
-        navy;
-
+button[type="button"]:hover {
+    background-color: white;
+    color: navy;
 }
-
-
 
 .results {
-
-    font-weight:
-        bold;
-
-    text-align:
-        left;
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    align-items:
-        center;
-
-    /* Links ausrichten */
-
-    width:
-        100%;
-
-    /* Stellen Sie sicher, dass der Container die volle Breite einnimmt */
-
-    padding:
-        0px;
-
-    /* Optionaler Abstand */
-
-    justify-content:
-        center;
-
-
-
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
