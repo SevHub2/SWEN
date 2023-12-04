@@ -25,10 +25,12 @@
         </div>
     </form>
     {% if final_score %}
-    <h2>Ergebnisse:</h2>
-    <p>Schwierigkeitsnote: {{ difficulty }}</p>
-    <p>Ausführungsnote: {{ execution }}</p>
-    <p>Endnote: {{ final_score }}</p>
+    <div class="results">
+        <h2>Ergebnisse:</h2>
+        <p>Schwierigkeitsnote: {{ difficulty }}</p>
+        <p>Ausführungsnote: {{ execution }}</p>
+        <p>Endnote: {{ final_score }}</p>
+    </div>
     {% endif %}
 
 </body>

@@ -7,13 +7,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
+
 }
 
-h1,
+h1 {
+    color: navy;
+    margin: 0;
+}
+
 h2 {
     color: navy;
-    margin: 0 0 20px 35px;
+    margin: 0 0 20px 0px;
 }
 
 form {
@@ -24,6 +29,12 @@ form {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+    width: 100%;
+    /* volle Breite im mobilen Layout */
+    max-width: 300px;
+    /* oder eine Breite Ihrer Wahl */
+    margin: 0 auto;
+    /* Zentrierung */
 }
 
 label {
@@ -72,6 +83,9 @@ button[type="button"]:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    max-width: 300px;
+    /* gleiche max-width wie das Formular */
+    margin: 0 auto;
+    /* zentriert innerhalb des festgelegten Maximalber
+
 }
