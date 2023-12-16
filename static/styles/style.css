@@ -1,3 +1,4 @@
+/* Grundlegendes Layout */
 body {
     font-family: Helvetica, sans-serif;
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
@@ -8,55 +9,60 @@ body {
     justify-content: center;
     align-items: center;
     text-align: left;
-
 }
 
-h1 {
+/* Überschriften-Stil */
+h1,
+h2 {
     color: navy;
     margin: 0;
 }
 
 h2 {
-    color: navy;
-    margin: 0 0 20px 0px;
+    margin-bottom: 20px;
 }
 
+/* Formular-Stil */
 form {
     background-color: transparent;
     padding: 20px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     text-align: left;
     width: 100%;
-    /* volle Breite im mobilen Layout */
     max-width: 300px;
-    /* oder eine Breite Ihrer Wahl */
     margin: 0 auto;
-    /* Zentrierung */
+}
+
+/* Stil für Label und Input-Felder */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 label {
     color: #121212;
     font-size: 16px;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 input[type="number"] {
-    padding: 16px;
-    margin-right: 7px;
-    margin-bottom: 20px;
-    /* Angepasst von 35px auf 20px für einheitlichen Abstand */
+    padding: 8px;
     border: 1px solid #121212;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.5);
     color: #121212;
     font-size: 16px;
+    width: 100%;
+    /* Stellt sicher, dass die Eingabefelder die volle Breite nutzen */
 }
 
-/* Stile für beide Buttons (Berechnen und Reset) */
+/* Gemeinsamer Button-Stil */
 input[type="submit"],
 button[type="button"] {
     background-color: navy;
@@ -71,21 +77,19 @@ button[type="button"] {
     text-align: center;
 }
 
-/* Hover-Effekt für beide Buttons */
+/* Hover-Effekt für Buttons */
 input[type="submit"]:hover,
 button[type="button"]:hover {
     background-color: white;
     color: navy;
 }
 
+/* Ergebnis-Container-Stil */
 .results {
     font-weight: bold;
     width: 100%;
     display: flex;
     flex-direction: column;
     max-width: 300px;
-    /* gleiche max-width wie das Formular */
     margin: 0 auto;
-    /* zentriert innerhalb des festgelegten Maximalber*/
-
 }
